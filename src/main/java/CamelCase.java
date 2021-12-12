@@ -1,5 +1,3 @@
-import java.util.Locale;
-
 public class CamelCase {
     public static String camelCase(String str) {
         String[] tab = str.split("");
@@ -8,9 +6,9 @@ public class CamelCase {
             if (tab[i].isBlank()) {
                 continue;
             } else if (i == 0) {
-                s.append(tab[i].toUpperCase(Locale.ROOT));
+                s.append(tab[i].toUpperCase());
             } else if (tab[i - 1].isBlank()) {
-                s.append(tab[i].toUpperCase(Locale.ROOT));
+                s.append(tab[i].toUpperCase());
             } else {
                 s.append(tab[i]);
             }
